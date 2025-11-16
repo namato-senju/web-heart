@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>For My Wife 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Floating hearts in background -->
+    <div class="hearts-bg" id="hearts"></div>
+
+    <div class="app">
+        <div class="card" id="card">
+            <div class="top-badge">
+                <span class="emoji">💘</span>
+                <span>Made only for you</span>
+            </div>
+
+            <!-- NEW: progress row -->
+            <div class="progress-row">
+                <span id="pageLabel" class="page-label">Page 1 of 5</span>
+                <div class="love-meter">
+                    <div id="loveFill" class="love-fill"></div>
+                </div>
+            </div>
+
+            <!-- Page 1: Welcome -->
+            <div class="page active" data-page="0">
+                <h1 class="title">
+                    Hi <span class="highlight-name wife-name">Jaan</span> 💖
+                </h1>
+                <p class="main-text">
+                    Ye chhoti si website sirf tumhare liye banayi hai, taaki tumhe yaad rahe ki
+                    <strong>main tumhari kitni parvah karta hu</strong>.
+                </p>
+                <p class="small-text">
+                    Shayad main hamesha words me express na kar paun, isliye socha thoda
+                    <strong>cute tech + pyaar</strong> mix karte hai. 😌
+                </p>
+            </div>
+
+            <!-- Page 2: Reasons I love you -->
+            <div class="page" data-page="1">
+                <h1 class="title">Why you are special ✨</h1>
+                <p class="main-text">
+                    Tum sirf meri wife nahi ho, tum meri <strong>best friend</strong>, meri
+                    <strong>peace</strong> aur meri <strong>favourite aadat</strong> ho.
+                </p>
+                <ul class="reasons">
+                    <li>
+                        <span class="icon">💕</span>
+                        <span>Tumhara care karne ka tareeka mujhe roz naya pyaar sikha deta hai.</span>
+                    </li>
+                    <li>
+                        <span class="icon">🌸</span>
+                        <span>Main jab overthink karta hu, tum sirf ek line me sab theek kar deti ho.</span>
+                    </li>
+                    <li>
+                        <span class="icon">😂</span>
+                        <span>Tumhari hasi literal <strong>therapy</strong> hai mere liye.</span>
+                    </li>
+                    <li>
+                        <span class="icon">🤝</span>
+                        <span>Jo bhi ho, tumhara “main hoon na” mera sabse bada confidence hai.</span>
+                    </li>
+                </ul>
+                <p class="small-text">
+                    Aur reason bahut saare hai… par itna likh du toh tum hansogi ki itna
+                    <strong>filmy</strong> mat ban. 😅
+                </p>
+            </div>
+            <!-- NEW Page: Station Memory -->
+            <div class="page" data-page="2">
+                <h1 class="title">That station moment 🚉💞</h1>
+                <img src="./station.jpeg" class="memory-img" alt="Our station photo">
+                <p class="main-text" style="margin-top:0.7rem;">
+                    Yaad hai? Us din jab maine pehli baar tumhe <strong>‘haan’</strong> bola tha
+                    aur tumne <strong>chupke se hum dono ki photo le li thi</strong>.
+                </p>
+                <p class="small-text">
+                    Tab mujhe samajh aagaya tha ki tum sirf mujhse pyaar nahi karti,
+                    <strong>tum mujhe sambhalna chahti ho… apne paas rakhna chahti ho</strong>.
+                </p>
+                <p class="small-text" style="margin-top:0.4rem;">
+                    Shayad tab se meri zindagi ka favourite jagah koi city nahi,
+                    <strong>tum ban gayi</strong>. 💗
+                </p>
+            </div>
+
+            <!-- Page 3: Cute game -->
+            <div class="page" data-page="2">
+                <h1 class="title">Tiny game for you 🎮</h1>
+                <div class="question-box">
+                    <p><strong>Sawaal:</strong> Main tumse kitna pyaar karta hu? 😉</p>
+                </div>
+                <div class="options">
+                    <button class="option-btn" data-correct="false">Thoda sa…</button>
+                    <button class="option-btn" data-correct="false">Theek-thaak 😏</button>
+                    <button class="option-btn" data-correct="true">Itna ke words kam pad jaaye 💫</button>
+                </div>
+                <div id="gameResult" class="game-result"></div>
+                <p class="small-text" style="margin-top:0.6rem;">
+                    Hint: agar tumhe doubt aya na, to kal se extra hugs aur extra care milega. 🤭
+                </p>
+            </div>
+
+            <!-- Page 4: Promises -->
+            <div class="page" data-page="3">
+                <h1 class="title">My small promises 📝</h1>
+                <p class="main-text">
+                    Perfect to nahi hoon, par <strong>tumhare saath better</strong> zarur hoon.
+                    Isliye kuch chhote chhote promises:
+                </p>
+                <ul class="promises-list">
+                    <li><span>🤍</span> Jab tum upset hogi, main sirf logic nahi, tumhari feelings bhi sununga.</li>
+                    <li><span>🤍</span> Chhoti chhoti cheeze yaad rakhne ki koshish karunga – tumhari pasand, tumhari
+                        baatein.</li>
+                    <li><span>🤍</span> Fight ho bhi jaaye, main hamesha tumhe phirse choose karunga.</li>
+                    <li><span>🤍</span> Aur life kitni bhi busy ho, tum mera favourite person hi rahogi. Always.</li>
+                </ul>
+                <p class="small-text">
+                    Ye promises sirf words nahi, <strong>daily practice</strong> ka plan hai. 🫶
+                </p>
+            </div>
+
+            <!-- Page 5: Final message -->
+            <div class="page" data-page="4">
+                <h1 class="title">Thank you, meri jaan 💍</h1>
+                <p class="main-text">
+                    Thank you meri life me aane ke liye, mujhe samajhne ke liye, aur mujhe
+                    itna <strong>lucky</strong> feel karwane ke liye.
+                </p>
+                <p class="main-text">
+                    Chahe duniya kitni bhi noisy ho jaaye, mera safe place sirf
+                    <strong>tumhari awaaz, tumhari muskaan</strong> aur tumhara saath hai.
+                </p>
+                <p class="small-text">
+                    Bas ek baat yaad rakhna:
+                    <strong>Main imperfect ho sakta hoon, par tumhare liye mera pyaar nahi.</strong> ♾️
+                </p>
+
+                <div class="music-hint">
+                    👉 Yahan tum apna favourite gana play kar sakti ho
+                    (mobile se koi bhi romantic song chala lena, baaki scene main sambhal lunga 😌🎵)
+                </div>
+
+                <div class="footer-note">
+                    Made with 🧠 + 💖 by
+                    <strong class="husband-name">Your husband</strong>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav-row">
+                <button id="prevBtn" class="nav-btn" disabled>
+                    ⬅ Back
+                </button>
+
+                <div class="dots" id="dots"></div>
+
+                <button id="nextBtn" class="nav-btn main">
+                    Next ➡
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
